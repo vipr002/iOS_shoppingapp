@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D4226272CA7098B00242926 /* nettbutikk_stylingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226262CA7098B00242926 /* nettbutikk_stylingApp.swift */; };
+		0D4226292CA7098B00242926 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226282CA7098B00242926 /* ContentView.swift */; };
+		0D42262B2CA7098D00242926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D42262A2CA7098D00242926 /* Assets.xcassets */; };
+		0D42262E2CA7098D00242926 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D42262D2CA7098D00242926 /* Preview Assets.xcassets */; };
+		0D4226382CA7098E00242926 /* nettbutikk_stylingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226372CA7098E00242926 /* nettbutikk_stylingTests.swift */; };
+		0D4226422CA7098E00242926 /* nettbutikk_stylingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226412CA7098E00242926 /* nettbutikk_stylingUITests.swift */; };
+		0D4226442CA7098E00242926 /* nettbutikk_stylingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226432CA7098E00242926 /* nettbutikk_stylingUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D4226342CA7098E00242926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D42261B2CA7098B00242926 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D4226222CA7098B00242926;
+			remoteInfo = "nettbutikk-styling";
+		};
+		0D42263E2CA7098E00242926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D42261B2CA7098B00242926 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D4226222CA7098B00242926;
+			remoteInfo = "nettbutikk-styling";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D4226232CA7098B00242926 /* nettbutikk-styling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nettbutikk-styling.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4226262CA7098B00242926 /* nettbutikk_stylingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nettbutikk_stylingApp.swift; sourceTree = "<group>"; };
+		0D4226282CA7098B00242926 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0D42262A2CA7098D00242926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D42262D2CA7098D00242926 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D4226332CA7098E00242926 /* nettbutikk-stylingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nettbutikk-stylingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4226372CA7098E00242926 /* nettbutikk_stylingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nettbutikk_stylingTests.swift; sourceTree = "<group>"; };
+		0D42263D2CA7098E00242926 /* nettbutikk-stylingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nettbutikk-stylingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D4226412CA7098E00242926 /* nettbutikk_stylingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nettbutikk_stylingUITests.swift; sourceTree = "<group>"; };
+		0D4226432CA7098E00242926 /* nettbutikk_stylingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nettbutikk_stylingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D4226202CA7098B00242926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4226302CA7098E00242926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D42263A2CA7098E00242926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D42261A2CA7098B00242926 = {
+			isa = PBXGroup;
+			children = (
+				0D4226252CA7098B00242926 /* nettbutikk-styling */,
+				0D4226362CA7098E00242926 /* nettbutikk-stylingTests */,
+				0D4226402CA7098E00242926 /* nettbutikk-stylingUITests */,
+				0D4226242CA7098B00242926 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D4226242CA7098B00242926 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D4226232CA7098B00242926 /* nettbutikk-styling.app */,
+				0D4226332CA7098E00242926 /* nettbutikk-stylingTests.xctest */,
+				0D42263D2CA7098E00242926 /* nettbutikk-stylingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D4226252CA7098B00242926 /* nettbutikk-styling */ = {
+			isa = PBXGroup;
+			children = (
+				0D4226262CA7098B00242926 /* nettbutikk_stylingApp.swift */,
+				0D4226282CA7098B00242926 /* ContentView.swift */,
+				0D42262A2CA7098D00242926 /* Assets.xcassets */,
+				0D42262C2CA7098D00242926 /* Preview Content */,
+			);
+			path = "nettbutikk-styling";
+			sourceTree = "<group>";
+		};
+		0D42262C2CA7098D00242926 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0D42262D2CA7098D00242926 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D4226362CA7098E00242926 /* nettbutikk-stylingTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D4226372CA7098E00242926 /* nettbutikk_stylingTests.swift */,
+			);
+			path = "nettbutikk-stylingTests";
+			sourceTree = "<group>";
+		};
+		0D4226402CA7098E00242926 /* nettbutikk-stylingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D4226412CA7098E00242926 /* nettbutikk_stylingUITests.swift */,
+				0D4226432CA7098E00242926 /* nettbutikk_stylingUITestsLaunchTests.swift */,
+			);
+			path = "nettbutikk-stylingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D4226222CA7098B00242926 /* nettbutikk-styling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D4226472CA7098E00242926 /* Build configuration list for PBXNativeTarget "nettbutikk-styling" */;
+			buildPhases = (
+				0D42261F2CA7098B00242926 /* Sources */,
+				0D4226202CA7098B00242926 /* Frameworks */,
+				0D4226212CA7098B00242926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nettbutikk-styling";
+			productName = "nettbutikk-styling";
+			productReference = 0D4226232CA7098B00242926 /* nettbutikk-styling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D4226322CA7098E00242926 /* nettbutikk-stylingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D42264A2CA7098E00242926 /* Build configuration list for PBXNativeTarget "nettbutikk-stylingTests" */;
+			buildPhases = (
+				0D42262F2CA7098E00242926 /* Sources */,
+				0D4226302CA7098E00242926 /* Frameworks */,
+				0D4226312CA7098E00242926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D4226352CA7098E00242926 /* PBXTargetDependency */,
+			);
+			name = "nettbutikk-stylingTests";
+			productName = "nettbutikk-stylingTests";
+			productReference = 0D4226332CA7098E00242926 /* nettbutikk-stylingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D42263C2CA7098E00242926 /* nettbutikk-stylingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D42264D2CA7098E00242926 /* Build configuration list for PBXNativeTarget "nettbutikk-stylingUITests" */;
+			buildPhases = (
+				0D4226392CA7098E00242926 /* Sources */,
+				0D42263A2CA7098E00242926 /* Frameworks */,
+				0D42263B2CA7098E00242926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D42263F2CA7098E00242926 /* PBXTargetDependency */,
+			);
+			name = "nettbutikk-stylingUITests";
+			productName = "nettbutikk-stylingUITests";
+			productReference = 0D42263D2CA7098E00242926 /* nettbutikk-stylingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D42261B2CA7098B00242926 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					0D4226222CA7098B00242926 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					0D4226322CA7098E00242926 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 0D4226222CA7098B00242926;
+					};
+					0D42263C2CA7098E00242926 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 0D4226222CA7098B00242926;
+					};
+				};
+			};
+			buildConfigurationList = 0D42261E2CA7098B00242926 /* Build configuration list for PBXProject "nettbutikk-styling" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D42261A2CA7098B00242926;
+			productRefGroup = 0D4226242CA7098B00242926 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D4226222CA7098B00242926 /* nettbutikk-styling */,
+				0D4226322CA7098E00242926 /* nettbutikk-stylingTests */,
+				0D42263C2CA7098E00242926 /* nettbutikk-stylingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D4226212CA7098B00242926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D42262E2CA7098D00242926 /* Preview Assets.xcassets in Resources */,
+				0D42262B2CA7098D00242926 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4226312CA7098E00242926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D42263B2CA7098E00242926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D42261F2CA7098B00242926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4226292CA7098B00242926 /* ContentView.swift in Sources */,
+				0D4226272CA7098B00242926 /* nettbutikk_stylingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D42262F2CA7098E00242926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4226382CA7098E00242926 /* nettbutikk_stylingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D4226392CA7098E00242926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4226442CA7098E00242926 /* nettbutikk_stylingUITestsLaunchTests.swift in Sources */,
+				0D4226422CA7098E00242926 /* nettbutikk_stylingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D4226352CA7098E00242926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D4226222CA7098B00242926 /* nettbutikk-styling */;
+			targetProxy = 0D4226342CA7098E00242926 /* PBXContainerItemProxy */;
+		};
+		0D42263F2CA7098E00242926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D4226222CA7098B00242926 /* nettbutikk-styling */;
+			targetProxy = 0D42263E2CA7098E00242926 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D4226452CA7098E00242926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D4226462CA7098E00242926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D4226482CA7098E00242926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"nettbutikk-styling/Preview Content\"";
+				DEVELOPMENT_TEAM = 42AFSKN7NH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.mittfirma.nettbutikk-styling";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D4226492CA7098E00242926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"nettbutikk-styling/Preview Content\"";
+				DEVELOPMENT_TEAM = 42AFSKN7NH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.mittfirma.nettbutikk-styling";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0D42264B2CA7098E00242926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42AFSKN7NH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.mittfirma.nettbutikk-stylingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nettbutikk-styling.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nettbutikk-styling";
+			};
+			name = Debug;
+		};
+		0D42264C2CA7098E00242926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42AFSKN7NH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.mittfirma.nettbutikk-stylingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nettbutikk-styling.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nettbutikk-styling";
+			};
+			name = Release;
+		};
+		0D42264E2CA7098E00242926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42AFSKN7NH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.mittfirma.nettbutikk-stylingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "nettbutikk-styling";
+			};
+			name = Debug;
+		};
+		0D42264F2CA7098E00242926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42AFSKN7NH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.mittfirma.nettbutikk-stylingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "nettbutikk-styling";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D42261E2CA7098B00242926 /* Build configuration list for PBXProject "nettbutikk-styling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4226452CA7098E00242926 /* Debug */,
+				0D4226462CA7098E00242926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D4226472CA7098E00242926 /* Build configuration list for PBXNativeTarget "nettbutikk-styling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4226482CA7098E00242926 /* Debug */,
+				0D4226492CA7098E00242926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D42264A2CA7098E00242926 /* Build configuration list for PBXNativeTarget "nettbutikk-stylingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D42264B2CA7098E00242926 /* Debug */,
+				0D42264C2CA7098E00242926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D42264D2CA7098E00242926 /* Build configuration list for PBXNativeTarget "nettbutikk-stylingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D42264E2CA7098E00242926 /* Debug */,
+				0D42264F2CA7098E00242926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D42261B2CA7098B00242926 /* Project object */;
+}

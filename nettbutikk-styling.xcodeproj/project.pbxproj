@@ -14,6 +14,15 @@
 		0D4226382CA7098E00242926 /* nettbutikk_stylingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226372CA7098E00242926 /* nettbutikk_stylingTests.swift */; };
 		0D4226422CA7098E00242926 /* nettbutikk_stylingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226412CA7098E00242926 /* nettbutikk_stylingUITests.swift */; };
 		0D4226442CA7098E00242926 /* nettbutikk_stylingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226432CA7098E00242926 /* nettbutikk_stylingUITestsLaunchTests.swift */; };
+		0D4226542CA70FA700242926 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226532CA70FA700242926 /* UIColor+Hex.swift */; };
+		0D4226582CA710B900242926 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226572CA710B900242926 /* HomeView.swift */; };
+		0D42265A2CA713F400242926 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226592CA713F400242926 /* SearchView.swift */; };
+		0D42265C2CA7143300242926 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42265B2CA7143300242926 /* FavoriteView.swift */; };
+		0D42265E2CA7146700242926 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42265D2CA7146700242926 /* BasketView.swift */; };
+		0D4226602CA7148E00242926 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42265F2CA7148E00242926 /* ProfileView.swift */; };
+		0D4226622CA7570F00242926 /* ClothingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226612CA7570E00242926 /* ClothingView.swift */; };
+		0D4226642CA7EEFC00242926 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226632CA7EEFC00242926 /* ItemCell.swift */; };
+		0D4226662CA7EFA000242926 /* ItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226652CA7EFA000242926 /* ItemDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		0D42263D2CA7098E00242926 /* nettbutikk-stylingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nettbutikk-stylingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4226412CA7098E00242926 /* nettbutikk_stylingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nettbutikk_stylingUITests.swift; sourceTree = "<group>"; };
 		0D4226432CA7098E00242926 /* nettbutikk_stylingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nettbutikk_stylingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D4226532CA70FA700242926 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		0D4226572CA710B900242926 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0D4226592CA713F400242926 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0D42265B2CA7143300242926 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		0D42265D2CA7146700242926 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		0D42265F2CA7148E00242926 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0D4226612CA7570E00242926 /* ClothingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingView.swift; sourceTree = "<group>"; };
+		0D4226632CA7EEFC00242926 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		0D4226652CA7EFA000242926 /* ItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +112,19 @@
 		0D4226252CA7098B00242926 /* nettbutikk-styling */ = {
 			isa = PBXGroup;
 			children = (
+				0D4226502CA70F0D00242926 /* Extensions */,
 				0D4226262CA7098B00242926 /* nettbutikk_stylingApp.swift */,
 				0D4226282CA7098B00242926 /* ContentView.swift */,
 				0D42262A2CA7098D00242926 /* Assets.xcassets */,
 				0D42262C2CA7098D00242926 /* Preview Content */,
+				0D4226572CA710B900242926 /* HomeView.swift */,
+				0D4226592CA713F400242926 /* SearchView.swift */,
+				0D42265B2CA7143300242926 /* FavoriteView.swift */,
+				0D42265D2CA7146700242926 /* BasketView.swift */,
+				0D42265F2CA7148E00242926 /* ProfileView.swift */,
+				0D4226612CA7570E00242926 /* ClothingView.swift */,
+				0D4226632CA7EEFC00242926 /* ItemCell.swift */,
+				0D4226652CA7EFA000242926 /* ItemDetails.swift */,
 			);
 			path = "nettbutikk-styling";
 			sourceTree = "<group>";
@@ -125,6 +152,14 @@
 				0D4226432CA7098E00242926 /* nettbutikk_stylingUITestsLaunchTests.swift */,
 			);
 			path = "nettbutikk-stylingUITests";
+			sourceTree = "<group>";
+		};
+		0D4226502CA70F0D00242926 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D4226532CA70FA700242926 /* UIColor+Hex.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +292,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D4226602CA7148E00242926 /* ProfileView.swift in Sources */,
+				0D42265A2CA713F400242926 /* SearchView.swift in Sources */,
+				0D4226542CA70FA700242926 /* UIColor+Hex.swift in Sources */,
+				0D4226582CA710B900242926 /* HomeView.swift in Sources */,
+				0D4226642CA7EEFC00242926 /* ItemCell.swift in Sources */,
 				0D4226292CA7098B00242926 /* ContentView.swift in Sources */,
+				0D4226662CA7EFA000242926 /* ItemDetails.swift in Sources */,
+				0D4226622CA7570F00242926 /* ClothingView.swift in Sources */,
+				0D42265C2CA7143300242926 /* FavoriteView.swift in Sources */,
+				0D42265E2CA7146700242926 /* BasketView.swift in Sources */,
 				0D4226272CA7098B00242926 /* nettbutikk_stylingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

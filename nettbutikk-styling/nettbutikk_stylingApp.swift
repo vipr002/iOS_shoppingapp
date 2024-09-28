@@ -15,3 +15,7 @@ struct nettbutikk_stylingApp: App {
         }
     }
 }
+
+#Preview {
+    ContentView()
+}

@@ -23,6 +23,8 @@
 		0D4226622CA7570F00242926 /* ClothingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226612CA7570E00242926 /* ClothingView.swift */; };
 		0D4226642CA7EEFC00242926 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226632CA7EEFC00242926 /* ItemCell.swift */; };
 		0D4226662CA7EFA000242926 /* ItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226652CA7EFA000242926 /* ItemDetails.swift */; };
+		0D4226682CA8028D00242926 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226672CA8028D00242926 /* Item.swift */; };
+		0D42266A2CA803B000242926 /* MockItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226692CA803B000242926 /* MockItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		0D4226612CA7570E00242926 /* ClothingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingView.swift; sourceTree = "<group>"; };
 		0D4226632CA7EEFC00242926 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		0D4226652CA7EFA000242926 /* ItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetails.swift; sourceTree = "<group>"; };
+		0D4226672CA8028D00242926 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		0D4226692CA803B000242926 /* MockItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 				0D4226612CA7570E00242926 /* ClothingView.swift */,
 				0D4226632CA7EEFC00242926 /* ItemCell.swift */,
 				0D4226652CA7EFA000242926 /* ItemDetails.swift */,
+				0D4226672CA8028D00242926 /* Item.swift */,
+				0D4226692CA803B000242926 /* MockItems.swift */,
 			);
 			path = "nettbutikk-styling";
 			sourceTree = "<group>";
@@ -296,11 +302,13 @@
 				0D42265A2CA713F400242926 /* SearchView.swift in Sources */,
 				0D4226542CA70FA700242926 /* UIColor+Hex.swift in Sources */,
 				0D4226582CA710B900242926 /* HomeView.swift in Sources */,
+				0D4226682CA8028D00242926 /* Item.swift in Sources */,
 				0D4226642CA7EEFC00242926 /* ItemCell.swift in Sources */,
 				0D4226292CA7098B00242926 /* ContentView.swift in Sources */,
 				0D4226662CA7EFA000242926 /* ItemDetails.swift in Sources */,
 				0D4226622CA7570F00242926 /* ClothingView.swift in Sources */,
 				0D42265C2CA7143300242926 /* FavoriteView.swift in Sources */,
+				0D42266A2CA803B000242926 /* MockItems.swift in Sources */,
 				0D42265E2CA7146700242926 /* BasketView.swift in Sources */,
 				0D4226272CA7098B00242926 /* nettbutikk_stylingApp.swift in Sources */,
 			);

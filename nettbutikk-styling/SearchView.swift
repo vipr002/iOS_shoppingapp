@@ -14,9 +14,8 @@ struct SearchView: View {
     var body: some View {
         
         ZStack {
-            // Bakgrunnsfargen for hele skjermen
+
             Color(UIColor(hex: "F6E4DC"))
-             //   .edgesIgnoringSafeArea(.all)  Sørger for at fargen dekker hele skjermen
             
             VStack {
 
@@ -25,11 +24,11 @@ struct SearchView: View {
                     .background(Color.white) 
                     .cornerRadius(10)
                     .padding()
-                    .background(Color(UIColor(hex: "F6E4DC"))) // Bakgrunnsfarge under søkefeltet
+                    .background(Color(UIColor(hex: "F6E4DC")))
                 
-                Spacer() // Skyver innholdet nedover slik at bakgrunnen fyller resten av siden
+                Spacer()
             }
-            .padding(.top, 10) // Valgfritt: Avstand fra toppen
+            .padding(.top, 10) 
         }
     }
 }

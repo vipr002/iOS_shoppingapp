@@ -9,12 +9,13 @@ import SwiftUI
 
 struct ClothingView: View {
     
+    @State private var items = mockItems
+    
     var body: some View {
         
         ZStack {
-            // Bakgrunnsfargen for hele skjermen
+
             Color(UIColor(hex: "FFE9D2"))
-            //   .edgesIgnoringSafeArea(.all)  Sørger for at fargen dekker hele skjermen
             
             VStack {
                 
@@ -39,17 +40,54 @@ struct ClothingView: View {
                 .padding()
                 .background(Color.white) // Bakgrunnsfarge for kategoriene
                 
-                HStack {
-                    Image("pants")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-
-                    Image("shirt")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                VStack {
+                    
+                    ScrollView(.horizontal) {
+                        
+                        HStack {
+                            
+                            ForEach($items) { $item in
+                                ItemCell(item: $item)
+                            }
+                        }
+                    }
+                    .padding(.horizontal, 0.5)
+                    
+                    ZStack {
+                        
+                        Color(UIColor(hex: "914920"))
+                            .frame(height: 400)
+                        
+                        VStack {
+                            
+                            Text("Høstens store trender")
+                                .foregroundColor(.white)
+                                .aspectRatio(contentMode: .fit)
+                                .font(.title)
+                                .padding(.top, 1)
+                            
+                            Image("blazer")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                            
+                            Button(action: {
+                                print("Nyhet button tapped")
+                            }) {
+                                Text("Nyheter")
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .frame(maxWidth: 130)
+                            }
+                            .background(Color.clear)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.white, lineWidth: 1)
+                            )
+                            .padding(.top, 8)
+                            .padding(.trailing, 225)
+                        }
+                    }
                 }
-                .padding(.horizontal)
-                
                 Spacer()
             }
         }

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @ObservedObject var viewModel: ItemViewModel
+    
     var body: some View {
         
         NavigationStack {
@@ -17,7 +20,7 @@ struct HomeView: View {
                 // ---- Kategorier ----
                 HStack {
                     Spacer()
-                    NavigationLink(destination: ClothingView()) {
+                    NavigationLink(destination: ClothingView(viewModel: viewModel)) {
                         Text("Klær")
                     }
                     Spacer()
@@ -114,10 +117,4 @@ struct HomeView: View {
             }
         }
     }
-}
-
-
-
-#Preview {
-    HomeView()
 }

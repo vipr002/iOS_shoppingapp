@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Item: Identifiable {
-    let id = UUID()
+struct Item: Identifiable, Codable {
+    let id: UUID
     let name: String
     let price: String
     let imageName: String
-    var isFavorite: Bool = false
+    var isFavorite: Bool = false // default til false
 }

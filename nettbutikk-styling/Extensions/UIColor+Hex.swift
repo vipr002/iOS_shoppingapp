@@ -9,7 +9,9 @@ import Foundation
 import SwiftUI
 
 extension UIColor {
+    
     convenience init(hex: String) {
+        
         var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
         hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
         

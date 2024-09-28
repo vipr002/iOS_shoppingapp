@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ItemCell: View {
-
-    @Binding var item: Item
     
+    @Binding var item: Item
+    @ObservedObject var viewModel: ItemViewModel
+
     var body: some View {
         
         ZStack(alignment: .topTrailing) {
@@ -24,9 +25,9 @@ struct ItemCell: View {
                     .clipped()
 
                 ZStack {
+                    
                     Color(UIColor(hex: "BB8971"))
                     HStack {
- 
                         Text("\(item.name) \(item.price),-")
                             .foregroundColor(.white)
                             .font(.system(size: 16, weight: .bold))
@@ -39,18 +40,17 @@ struct ItemCell: View {
             }
 
             // ---- Favorittikon ----
-            
             Button(action: {
-                item.isFavorite.toggle() 
+                viewModel.toggleFavorite(for: item)
+                print("Favoritt status togglet for \(item.name)")
             }) {
-                Image(systemName: item.isFavorite ? "heart.fill" : "heart")
+                Image(systemName: viewModel.isFavorite(item) ? "heart.fill" : "heart")
                     .resizable()
                     .frame(width: 24, height: 24)
                     .foregroundColor(.white)
                     .padding()
             }
         }
-        .padding() 
+        .padding()
     }
 }
-

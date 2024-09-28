@@ -10,11 +10,12 @@ import SwiftUI
 struct ClothingView: View {
     
     @State private var items = mockItems
+    @State private var selectedItem: Item?
+    @ObservedObject var viewModel: ItemViewModel
     
     var body: some View {
         
         ZStack {
-            
             Color(UIColor(hex: "FFE9D2"))
             
             ScrollView(.vertical) {
@@ -23,18 +24,15 @@ struct ClothingView: View {
                     
                     // ---- Kategorier øverst ----
                     HStack {
-                        
                         Spacer()
-                        NavigationLink(destination: ClothingView()) {
+                        NavigationLink(destination: ClothingView(viewModel: viewModel)) {
                             Text("Klær")
                         }
-                        
                         Spacer()
                         Text("Sko")
                             .onTapGesture {
                                 print("Sko tapped")
                             }
-                        
                         Spacer()
                         Text("Tilbehør")
                             .onTapGesture {
@@ -45,65 +43,66 @@ struct ClothingView: View {
                     .padding()
                     .background(Color.white)
                     
-                    // ----  Horistontale Items ---- 
-                    
-                    VStack {
-  
-                        ScrollView(.horizontal) {
-                            HStack {
-                                ForEach($items) { $item in
-                                    ItemCell(item: $item)
-                                }
-                            }
-                        }
-                        .padding(.horizontal, 0.5)
-                        
-                        // --- Seksjon for høsttrender ---
-                        
-                        ZStack {
-                            
-                            Color(UIColor(hex: "914920"))
-                                .frame(height: 400)
-                            
-                            VStack {
-                                
-                                Text("Høstens store trender")
-                                    .foregroundColor(.white)
-                                    .aspectRatio(contentMode: .fit)
-                                    .font(.title)
-                                    .padding(.top, 1)
-                                
-                                Image("blazer")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                
-                                Button(action: {
-                                    print("Nyhet button tapped")
-                                }) {
-                                    Text("Nyheter")
-                                        .foregroundColor(.white)
-                                        .padding()
-                                        .frame(maxWidth: 130)
-                                }
-                                .background(Color.clear)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color.white, lineWidth: 1)
-                                )
-                                .padding(.top, 8)
-                                .padding(.trailing, 225)
+                    // ---- Horisontale Items ----
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach($items, id: \.id) { $item in
+                                ItemCell(item: $item, viewModel: viewModel)
+                                    .onTapGesture {
+                                        selectedItem = item
+                                    }
                             }
                         }
                     }
+                    .padding(.horizontal, 0.5)
                     
-                    Spacer()
+                    // --- Seksjon for høsttrender ---
+                    ZStack {
+                        Color(UIColor(hex: "914920"))
+                            .frame(height: 400)
+                        
+                        VStack {
+                            Text("Høstens store trender")
+                                .foregroundColor(.white)
+                                .aspectRatio(contentMode: .fit)
+                                .font(.title)
+                                .padding(.top, 1)
+                            
+                            Image("blazer")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                            
+                            Button(action: {
+                                print("Nyhet button tapped")
+                            }) {
+                                Text("Nyheter")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 18, weight: .bold))
+                                    .padding()
+                                    .frame(maxWidth: 130)
+                            }
+                            .background(Color.clear)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.white, lineWidth: 1)
+                            )
+                            .padding(.top, 8)
+                            .padding(.trailing, 225)
+                        }
+                    }
                 }
+                Spacer()
             }
+        }
+        // Sheet for å vise item-detaljer
+        .sheet(item: $selectedItem) { item in
+            ItemDetails(item: $items[items.firstIndex(where: { $0.id == item.id })!], viewModel: viewModel)
+                .presentationDetents([.fraction(0.7), .large])
         }
     }
 }
 
 
 #Preview {
-    ClothingView()
+    ClothingView(viewModel: ItemViewModel()) 
 }

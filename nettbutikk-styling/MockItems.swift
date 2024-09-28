@@ -8,7 +8,6 @@
 import Foundation
 
 let mockItems = [
-    Item(name: "Bukse", price: "799", imageName: "pants"),
-    
-    Item(name: "Bluse", price: "599", imageName: "shirt"),
+    Item(id: UUID(), name: "Bukse", price: "799", imageName: "pants", isFavorite: false),
+    Item(id: UUID(), name: "Bluse", price: "599", imageName: "shirt", isFavorite: false)
 ]

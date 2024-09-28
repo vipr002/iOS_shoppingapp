@@ -9,42 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     
-    init() {
-        UITabBar.appearance().backgroundColor = UIColor.white
-    }
+    @StateObject var viewModel = ItemViewModel()
     
     var body: some View {
-            
-            TabView {
-                
-                HomeView()
-                    .tabItem {
-                        Label("", systemImage: "house")
-                    }
-                
-                SearchView()
+        TabView {
+            HomeView(viewModel: viewModel)
                 .tabItem {
-                    Label("", systemImage: "magnifyingglass")
+                    Label("Home", systemImage: "house")
                 }
-                
-                FavoriteView()
-                    .tabItem {
-                        Label("", systemImage: "heart")
-                    }
-                
-                BasketView()
-                    .tabItem {
-                        Label("", systemImage: "basket")
-                    }
-
-                ProfileView()
-                    .tabItem {
-                        Label("", systemImage: "person")
-                    }
-            }
+            
+            SearchView()
+                .tabItem {
+                    Label("Search", systemImage: "magnifyingglass")
+                }
+            
+            FavoriteView(viewModel: viewModel) 
+                .tabItem {
+                    Label("Favorites", systemImage: "heart")
+                }
+            
+            BasketView()
+                .tabItem {
+                    Label("Basket", systemImage: "basket")
+                }
+            
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person")
+                }
+        }
+        .onAppear {
+            viewModel.loadItems() // Laster inn elementene med favorittstatus
+        }
     }
-}
-
-#Preview {
-    ContentView()
 }

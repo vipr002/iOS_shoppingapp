@@ -12,11 +12,9 @@ struct FavoriteView: View {
     @ObservedObject var viewModel: ItemViewModel
 
     var body: some View {
-        
         List {
-            // Filtrerer favoritt-elementer
-            ForEach(viewModel.items.indices.filter { viewModel.items[$0].isFavorite }, id: \.self) { index in
-                ItemCell(item: $viewModel.items[index], viewModel: viewModel)
+            ForEach(viewModel.items.filter { $0.isFavorite }) { item in
+                ItemCell(item: .constant(item), viewModel: viewModel)
             }
         }
         .navigationTitle("Favoritter")

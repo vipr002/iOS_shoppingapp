@@ -13,11 +13,8 @@ struct ItemCell: View {
     @ObservedObject var viewModel: ItemViewModel
 
     var body: some View {
-        
         ZStack(alignment: .topTrailing) {
-            
             VStack {
-                
                 Image(item.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -25,7 +22,6 @@ struct ItemCell: View {
                     .clipped()
 
                 ZStack {
-                    
                     Color(UIColor(hex: "BB8971"))
                     HStack {
                         Text("\(item.name) \(item.price),-")
@@ -44,11 +40,19 @@ struct ItemCell: View {
                 viewModel.toggleFavorite(for: item)
                 print("Favoritt status togglet for \(item.name)")
             }) {
-                Image(systemName: viewModel.isFavorite(item) ? "heart.fill" : "heart")
-                    .resizable()
-                    .frame(width: 24, height: 24)
-                    .foregroundColor(.white)
-                    .padding()
+                if item.isFavorite {
+                    Image(systemName: "heart.fill")
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                        .foregroundColor(.white)
+                        .padding()
+                } else {
+                    Image(systemName: "heart")
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                        .foregroundColor(.white)
+                        .padding()
+                }
             }
         }
         .padding()

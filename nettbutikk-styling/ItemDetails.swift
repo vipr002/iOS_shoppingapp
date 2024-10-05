@@ -49,7 +49,7 @@ struct ItemDetails: View {
                                 viewModel.toggleFavorite(for: item)
                                 print("tapped favorite in details sheet")
                             }) {
-                                Image(systemName: viewModel.isFavorite(item) ? "heart.fill" : "heart")
+                                Image(systemName: item.isFavorite ? "heart.fill" : "heart")
                                     .resizable()
                                     .frame(width: 25, height: 25)
                                     .foregroundColor(.white)

@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ClothingView: View {
     
-    @State private var items = mockItems
-    @State private var selectedItem: Item?
     @ObservedObject var viewModel: ItemViewModel
+    @State private var selectedItem: Item?
     
     var body: some View {
         
@@ -46,7 +45,7 @@ struct ClothingView: View {
                     // ---- Horisontale Items ----
                     ScrollView(.horizontal) {
                         HStack {
-                            ForEach($items, id: \.id) { $item in
+                            ForEach($viewModel.items, id: \.id) { $item in
                                 ItemCell(item: $item, viewModel: viewModel)
                                     .onTapGesture {
                                         selectedItem = item
@@ -96,13 +95,10 @@ struct ClothingView: View {
         }
         // Sheet for å vise item-detaljer
         .sheet(item: $selectedItem) { item in
-            ItemDetails(item: $items[items.firstIndex(where: { $0.id == item.id })!], viewModel: viewModel)
-                .presentationDetents([.fraction(0.7), .large])
+            if let index = viewModel.items.firstIndex(where: { $0.id == item.id }) {
+                ItemDetails(item: $viewModel.items[index], viewModel: viewModel)
+                    .presentationDetents([.fraction(0.7), .large])
+            }
         }
     }
-}
-
-
-#Preview {
-    ClothingView(viewModel: ItemViewModel()) 
 }

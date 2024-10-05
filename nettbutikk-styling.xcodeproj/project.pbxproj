@@ -25,7 +25,6 @@
 		0D4226662CA7EFA000242926 /* ItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226652CA7EFA000242926 /* ItemDetails.swift */; };
 		0D4226682CA8028D00242926 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226672CA8028D00242926 /* Item.swift */; };
 		0D42266A2CA803B000242926 /* MockItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226692CA803B000242926 /* MockItems.swift */; };
-		0D4226702CA871EC00242926 /* FavoritesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42266F2CA871EC00242926 /* FavoritesDatabase.swift */; };
 		0D4226722CA8722100242926 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4226712CA8722100242926 /* ItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +67,6 @@
 		0D4226652CA7EFA000242926 /* ItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetails.swift; sourceTree = "<group>"; };
 		0D4226672CA8028D00242926 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0D4226692CA803B000242926 /* MockItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockItems.swift; sourceTree = "<group>"; };
-		0D42266F2CA871EC00242926 /* FavoritesDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDatabase.swift; sourceTree = "<group>"; };
 		0D4226712CA8722100242926 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,7 +133,6 @@
 				0D4226652CA7EFA000242926 /* ItemDetails.swift */,
 				0D4226672CA8028D00242926 /* Item.swift */,
 				0D4226692CA803B000242926 /* MockItems.swift */,
-				0D42266F2CA871EC00242926 /* FavoritesDatabase.swift */,
 				0D4226712CA8722100242926 /* ItemViewModel.swift */,
 			);
 			path = "nettbutikk-styling";
@@ -306,7 +303,6 @@
 			files = (
 				0D4226602CA7148E00242926 /* ProfileView.swift in Sources */,
 				0D42265A2CA713F400242926 /* SearchView.swift in Sources */,
-				0D4226702CA871EC00242926 /* FavoritesDatabase.swift in Sources */,
 				0D4226542CA70FA700242926 /* UIColor+Hex.swift in Sources */,
 				0D4226582CA710B900242926 /* HomeView.swift in Sources */,
 				0D4226682CA8028D00242926 /* Item.swift in Sources */,

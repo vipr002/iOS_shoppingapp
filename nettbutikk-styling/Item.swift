@@ -13,6 +13,5 @@ struct Item: Identifiable, Codable {
     let name: String
     let price: String
     let imageName: String
-    var isFavorite: Bool 
-    
+    var isFavorite: Bool     
 }

@@ -10,29 +10,44 @@ import SwiftUI
 struct SearchView: View {
     
     @State var textfieldText: String = ""
+    @ObservedObject var viewModel: ItemViewModel
     
     var body: some View {
         
         ZStack {
-
-            Color(UIColor(hex: "F6E4DC"))
+            Color(UIColor(hex: "F6E4DC") ?? UIColor.white)
             
             VStack {
 
-                TextField("Søk", text: $textfieldText)
+                TextField("Søk etter produkter", text: $textfieldText)
                     .padding()
-                    .background(Color.white) 
+                    .background(Color.white)
                     .cornerRadius(10)
-                    .padding()
-                    .background(Color(UIColor(hex: "F6E4DC")))
+                    .padding(.horizontal)
+                    .background(Color(UIColor(hex: "F6E4DC") ?? UIColor.white))
+
+                // dersom søketekst ikke er tom, vis filtrerte elementer
+                if !textfieldText.isEmpty {
+                    ScrollView {
+                        VStack {
+                            
+                            ForEach(viewModel.items.filter { item in
+                                // filtrering basert på søketekst
+                                item.name.localizedCaseInsensitiveContains(textfieldText)
+                            }) { item in
+                                ItemCell(item: .constant(item), viewModel: viewModel)
+                            }
+                        }
+                    }
+                } else {
+                    Text("Ingen resultater å vise")
+                        .foregroundColor(.gray)
+                        .padding()
+                }
                 
                 Spacer()
             }
-            .padding(.top, 10) 
+            .padding(.top, 10)
         }
     }
 }
-
-    #Preview {
-        SearchView()
-    }
